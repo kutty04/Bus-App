@@ -1,0 +1,24 @@
+Chennai Bus Crowding — Model Evaluation
+========================================
+
+              precision    recall  f1-score   support
+
+         low       1.00      0.95      0.98        21
+      medium       0.82      0.74      0.78        19
+        high       0.88      0.95      0.92        40
+
+    accuracy                           0.90        80
+   macro avg       0.90      0.88      0.89        80
+weighted avg       0.90      0.90      0.90        80
+
+Cross-val accuracy: 77.25% ± 10.74%
+
+Feature importances:
+  hour: 0.259
+  day_of_week: 0.178
+  is_peak_am: 0.153
+  route_enc: 0.142
+  is_peak_pm: 0.141
+  zone_enc: 0.064
+  is_weekend: 0.042
+  direction_enc: 0.022
